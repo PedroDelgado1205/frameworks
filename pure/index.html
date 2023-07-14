@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Input dynamic</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <style>
+        .notification{
+            background-color: aquamarine;
+            border-radius: 3px;
+            margin: 2px;
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title has-text-centered">Input Dinámico</h1>
+        <div id="jsonDiv">
+            
+        </div>
+        <form action="" id="frmUsers" class="pure-form">
+            <label class="label">Username</label>
+            <div class="field is-grouped">
+                <fieldset>
+                    <input class="input" name="name" type="text" placeholder="Name" />
+                    <input class="input" name="lastName" type="text" placeholder="Lastname" />
+                    <div class="control">
+                        <button id="btnAdd" type="button" class="pure-button pure-button-primary">
+                            <span class="icon is-small">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                        </button>
+                        <button id="btnSave" type="button" class="pure-button pure-button-primary">
+                            <span class="icon is-small">
+                                <i class="fas fa-download"></i>
+                            </span>
+                        </button>
+                </fieldset>
+                </div>
+            </div>
+        </form>
+        <hr>
+        <div id="divElements">
+
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>
